@@ -17,7 +17,7 @@ namespace Geometry
         public Triangle(double sideA, double sideB, double sideC)
         {
             if (sideA <= 0 || sideB <= 0 || sideC <= 0)
-                throw new ArgumentException("Указанные стороны не являются положительными числа");
+                throw new ArgumentException("Указанные стороны не являются положительными числами");
 
             else if (sideA + sideB < sideC || sideB + sideC < sideA || sideA + sideC < sideB)
                 throw new ArgumentException("Из указанных сторон невозможно образовать треугольник");

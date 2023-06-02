@@ -13,7 +13,7 @@ namespace Geometry
         public Circle(double radius)
         {
             if (radius <= 0.0)
-                throw new ArgumentException("Указаный радиус не является положительным число");
+                throw new ArgumentException("Указаный радиус не является положительным числом");
             r = radius;
         }
 
